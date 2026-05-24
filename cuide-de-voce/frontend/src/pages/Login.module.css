@@ -1,0 +1,104 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(160deg, var(--green-700) 0%, var(--green-500) 100%);
+  color: var(--white);
+}
+
+.heroTop {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 36px 32px;
+  text-align: center;
+  position: relative;
+}
+
+.heroCircle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.heroTop h1 {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.heroTop h1 em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.heroTop p {
+  font-size: 15px;
+  opacity: 0.85;
+  line-height: 1.7;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.welcomeForm {
+  background: var(--white);
+  border-radius: 32px 32px 0 0;
+  padding: 32px 28px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.welcomeForm label {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginTitle {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.loginSubtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.loginDivider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.loginDivider::before,
+.loginDivider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--green-100);
+}

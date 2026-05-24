@@ -1,0 +1,56 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--off-white);
+}
+
+.tipCard {
+  background: var(--white);
+  border: 1.5px solid var(--green-100);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.tipCard:hover { border-color: var(--green-300); box-shadow: var(--shadow); }
+.tipCard.open { border-color: var(--green-400); }
+
+.tipHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tipIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tipHeader h3 {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+
+.tipChevron {
+  color: var(--text-muted);
+  transition: transform 0.25s ease;
+  display: flex;
+}
+
+.tipText {
+  font-size: 13px;
+  color: var(--text-mid);
+  line-height: 1.75;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--green-100);
+}

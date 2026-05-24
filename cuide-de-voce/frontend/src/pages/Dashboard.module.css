@@ -1,0 +1,115 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--white);
+}
+
+.menuHeader {
+  background: linear-gradient(160deg, var(--green-700) 0%, var(--green-500) 100%);
+  color: var(--white);
+  padding: 52px 24px 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.menuHeader p {
+  font-size: 14px;
+  opacity: 0.75;
+  margin-bottom: 6px;
+}
+
+.menuHeader h2 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.menuHeader h2 em {
+  font-style: italic;
+}
+
+.greeting {
+  font-weight: 500;
+  opacity: 1;
+}
+
+.logoutBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 999px;
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 13px;
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+  z-index: 2;
+}
+.logoutBtn:hover { background: rgba(255,255,255,0.25); }
+
+.menuBody {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.menuCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--white);
+  border: 1.5px solid var(--green-100);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+.menuCard:hover {
+  border-color: var(--green-300);
+  box-shadow: var(--shadow);
+  transform: translateY(-1px);
+}
+
+.menuCard h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 3px;
+}
+
+.menuCard p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.mcIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.mcArrow {
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+}
+
+.helpCard {
+  border-color: #ffe0e0;
+}
+.helpCard:hover {
+  border-color: #f5a0a0;
+  box-shadow: 0 4px 24px rgba(192,57,43,0.10);
+}
